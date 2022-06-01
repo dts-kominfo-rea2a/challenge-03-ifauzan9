@@ -37,7 +37,7 @@ const totalBelanjaan = function (data) {
   let harga = 0;
   let i = 0;
   while (i < data.length) {
-    harga += data[i].harga;
+    harga += data[i].harga * data[i].kuantitas;
     i++;
   }
   return harga;
